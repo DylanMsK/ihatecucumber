@@ -7,7 +7,7 @@ module.exports = {
   siteUrl: "http://ihatecucumber.netlify.com",
   pathPrefix: "",
   // siteImage: "preview.jpg",
-  siteImage: "../../src/images/app-icons/cucumbers.png",
+  siteImage: "",
   siteLanguage: "en",
   // author
   authorName: "Minsu Kang",
@@ -16,8 +16,6 @@ module.exports = {
   infoTitle: "Minsu Kang",
   infoTitleNote: "python blog",
   // manifest.json
-  // manifestName: "PersonalBlog - a blog starter for GatsbyJS",
-  // manifestShortName: "PersonalBlog", // max 12 characters
   manifestName: "ihatecucumber",
   manifestShortName: "ihatecucumber", // max 12 characters
   manifestStartUrl: "/",
