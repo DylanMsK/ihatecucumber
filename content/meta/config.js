@@ -1,32 +1,35 @@
 const colors = require("../../src/styles/colors");
 
 module.exports = {
-  siteTitle: "PersonalBlog - a blog starter for GatsbyJS", // <title>
-  shortSiteTitle: "PersonalBlog GatsbyJS Starter", // <title> ending for posts and pages
-  siteDescription: "PersonalBlog is a GatsbyJS starter.",
-  siteUrl: "https://gatsby-starter-personal-blog.greglobinski.com",
+  siteTitle: "ihatecucumber", // <title>
+  shortSiteTitle: "ihatecucumber", // <title> ending for posts and pages
+  siteDescription: "Dylan's python blog",
+  siteUrl: "http://ihatecucumber.netlify.com",
   pathPrefix: "",
-  siteImage: "preview.jpg",
+  // siteImage: "preview.jpg",
+  siteImage: "../../src/images/app-icons/cucumbers.png",
   siteLanguage: "en",
   // author
-  authorName: "greg lobinski",
-  authorTwitterAccount: "greglobinski",
+  authorName: "Minsu Kang",
+  authorTwitterAccount: "",
   // info
-  infoTitle: "greg lobinski",
-  infoTitleNote: "personal blog",
+  infoTitle: "Minsu Kang",
+  infoTitleNote: "python blog",
   // manifest.json
-  manifestName: "PersonalBlog - a blog starter for GatsbyJS",
-  manifestShortName: "PersonalBlog", // max 12 characters
+  // manifestName: "PersonalBlog - a blog starter for GatsbyJS",
+  // manifestShortName: "PersonalBlog", // max 12 characters
+  manifestName: "ihatecucumber",
+  manifestShortName: "ihatecucumber", // max 12 characters
   manifestStartUrl: "/",
   manifestBackgroundColor: colors.background,
   manifestThemeColor: colors.background,
   manifestDisplay: "standalone",
   // contact
-  contactEmail: "john@doe.com",
+  contactEmail: "kms920612@gmail.com",
   // social
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/greglobinski" },
-    { name: "twitter", url: "https://twitter.com/greglobinski" },
-    { name: "facebook", url: "https://facebook.com/greglobinski" }
+    { name: "github", url: "https://github.com/DylanMsK" },
+    { name: "twitter", url: "https://twitter.com/" },
+    { name: "facebook", url: "https://facebook.com/" }
   ]
 };
