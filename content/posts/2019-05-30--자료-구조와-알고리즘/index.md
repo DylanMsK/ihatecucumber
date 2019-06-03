@@ -1,7 +1,7 @@
 ---
 title: 자료 구조와 알고리즘-1
 subTitle: 시퀀스를 개별 변수로 나누기
-category: "python"
+category: "Python"
 cover: ../python.png
 ---
 
