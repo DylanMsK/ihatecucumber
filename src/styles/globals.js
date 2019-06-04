@@ -38,7 +38,7 @@ export default {
      */
     pre: {
       fontFamily: "monospace, monospace" /* 1 */,
-      fontSize: "1em" /* 2 */
+      fontSize: "1rem" /* 2 */
     },
 
     /**
@@ -77,7 +77,7 @@ export default {
      */
     "code, kbp, samp": {
       fontFamily: "monospace, monospace" /* 1 */,
-      fontSize: "1em" /* 2 */
+      fontSize: "1rem" /* 2 */
     },
 
     /**
