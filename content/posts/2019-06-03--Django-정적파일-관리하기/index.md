@@ -1,13 +1,8 @@
 ---
-
 title: Django Static 파일 관리하기
-
 subTitle: Static 파일 설정
-
 category: "Django"
-
 cover: ../django.png
-
 ---
 
 django는 기본적으로 정적 파일을 처리하기 위해 staticfiles라는 모듈을 제공한다. 여기서 static 파일이란 웹 사이트 구성요소 중 Image, Css, Script 등 **내용이 고정되어 응답을 할 때 병도의 처리 없이 파일 내용을 그대로 보내주면 되는 파일**을 의미한다.
