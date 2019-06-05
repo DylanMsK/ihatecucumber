@@ -14,6 +14,7 @@ const styles = theme => ({
       color: theme.base.colors.link
     },
     "& .gatsby-highlight": {
+      fontSize: "90%",
       margin: "2em 0"
     },
     "& .gatsby-resp-iframe-wrapper": {

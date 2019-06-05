@@ -38,7 +38,7 @@ export default {
      */
     pre: {
       fontFamily: "monospace, monospace" /* 1 */,
-      fontSize: "1rem" /* 2 */
+      fontSize: "1em" /* 2 */
     },
 
     /**
@@ -77,7 +77,7 @@ export default {
      */
     "code, kbp, samp": {
       fontFamily: "monospace, monospace" /* 1 */,
-      fontSize: "1rem" /* 2 */
+      fontSize: "1em" /* 2 */
     },
 
     /**
@@ -373,11 +373,12 @@ export default {
       "-webkit-box-shadow": "0 0 0 50px white inset"
     },
     ":not(pre) > code[class*='language-']": {
-      background: "#eee",
-      color: "#666",
+      fontSize: "90%",
+      color: "#333333",
+      background: "#f5cc0066",
       textShadow: "none",
       padding: "1px 5px",
-      borderRadius: "2px"
+      borderRadius: "4px"
     }
   }
 };
