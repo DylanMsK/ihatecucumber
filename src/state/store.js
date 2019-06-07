@@ -103,7 +103,7 @@ const initialState = {
   navigatorFilter: "",
   isWideScreen: false,
   scrollToTop: false,
-  fontSizeIncrease: 1.1,
+  fontSizeIncrease: 1.3,
   categoryFilter: "all posts"
 };
 
