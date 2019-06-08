@@ -154,3 +154,6 @@ def matchcase(word):
 print(re.sub('python', matchcase('snake'), text, flags=re.IGNORECASE))
 # 'UPPER SNAKE, lower snake, Mixed Snake'
 ```
+<br>
+
+위 내용은 *Python Cookbook, 3rd edition, by David Beazley and Brian K. Jones (O'Reilly)* 를 참고하여 정리함.
