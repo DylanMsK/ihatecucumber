@@ -19,16 +19,6 @@ module.exports = class HTML extends React.Component {
     return (
       <html {...this.props.htmlAttributes}>
         <head>
-          {/* Global site tag (gtag.js) - Google Analytics */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141102089-1"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-141102089-1');
-          </script>
-
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
