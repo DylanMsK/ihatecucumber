@@ -2,7 +2,7 @@ require("dotenv").config();
 const config = require("./content/meta/config");
 
 const query = `{
-  allMarkdownRemark(filter: { id: { regex: "//posts|pages//" } }) {
+  allMarkdownRemark(filter: { id: { regex: "//posts//" } }) {
     edges {
       node {
         objectID: id
