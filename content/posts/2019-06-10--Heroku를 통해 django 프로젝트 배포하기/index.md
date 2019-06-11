@@ -87,7 +87,7 @@ Heroku에 프로젝트를 배포하기 위한 마지막 작업이다. python 프
 
 **.gitignore 파일 생성**
 
-[gitignore.io](https://www.gitignore.io/)는 `.gitignore`의 기본 양식을 제공한다. 프로젝트에서 사용한 기술스택을 키워드로 검색하여 기본 양식을 얻고, 추가적으로 제외시킬 파일이나 로그를 추가/수정 한다.
+gitignore.io[[링크](https://www.gitignore.io/)]는 `.gitignore`의 기본 양식을 제공한다. 프로젝트에서 사용한 기술스택을 키워드로 검색하여 기본 양식을 얻고, 추가적으로 제외시킬 파일이나 로그를 추가/수정 한다.
 
 <br>
 
@@ -118,4 +118,4 @@ $ heroku run python manage.py migrate
 $ heroku run python manage.py createsuperuser
 ```
 
-Heroku는 학습 단계의 개발자가 사용하기 가장 쉬운 웹 호스팅 서비스이다. 위 작업들은 django 프로젝트를 클라우드 서버에서 돌릴 수 있게 해주는 가장 최소한의 조건이며 추가적인 기능들(예를 들면 web hook, 24 hours runtime 등) 이나 최신 정보는 heroku의 [공식문서](https://devcenter.heroku.com/)와 [블로그](https://blog.heroku.com/)를 참고하면 된다.
+Heroku는 학습 단계의 개발자가 사용하기 가장 쉬운 웹 호스팅 서비스이다. 위 작업들은 django 프로젝트를 클라우드 서버에서 돌릴 수 있게 해주는 가장 최소한의 조건이며 추가적인 기능들(예를 들면 web hook, 24 hours runtime 등) 이나 최신 정보는 heroku의 공식문서[[링크](https://devcenter.heroku.com/)]와 블로그[[링크](https://blog.heroku.com/)]를 참고하면 된다.
