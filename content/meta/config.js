@@ -14,7 +14,7 @@ module.exports = {
   authorTwitterAccount: "",
   // info
   infoTitle: "Minsu Kang",
-  infoTitleNote: "To Be a Full Stack Developer",
+  infoTitleNote: "Full Stack Dev. Blog",
   // manifest.json
   manifestName: "ihatecucumber",
   manifestShortName: "ihatecucumber", // max 12 characters
