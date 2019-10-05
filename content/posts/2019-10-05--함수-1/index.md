@@ -81,8 +81,59 @@ Help on function receiver in module __main__:
 
 receiver(maxsize, *, block)
     Receives a message
+>>>
 ```
 
 <br>
 
 ## 함수 인자에 메타데이터 넣기
+함수를 작성했다면 다른사람이 함수를 어떻게 사용해야 하는지 알 수 있도록 하는게 좋을것이다. 주로 주석을 사용해서 `README`를 작성할 수 있겠지만 Python이 제공하는 주석이 붙은 함수를 작성할 수도 있다.
+```python
+def add(x:int, y:int) -> int:
+    return x + y
+```
+Python 인터프리터는 주석에 어떠한 의미도 부여하지 않는다. 타입을 확인하지도 않고 Python의 실행 방식에도 영향을 주지 않는다. 오직 소스 코드를 읽는 사람들이 이애하기 쉽도록 설명해 줄 뿐이다.
+```bash
+>>> help(add)
+Help on function add in module __main__:
+
+add(x: int, y: int) -> int
+>>>
+```
+어떠한 객체도(예: 숫자, 문자역, 인스턴스) 주석으로 붙일 수 있지만, 주로 클래스나 문자열을 주석으로 붙힌다. 이 주석은 함수의 `__annotations__` 속성에 저장된다.
+```bash
+>>> add.__annotations__
+{'x': <class 'int'>, 'y': <class 'int'>, 'return': <class 'int'>}
+>>>
+```
+주석을 활용할 수 있는 방법은 많지만, 기본적으로는 문서화에 도움을 주기 위해 사용한다. 자신의 코드를 오픈소스로 배포하고 싶다면 다른 사람들을 위해 주석을 작성하는 것이 코드의 완성도를 높히는 방법 중 하나일 것이다.
+
+<br>
+
+## 함수에서 여러 값을 반환
+함수에서 여러개의 결과를 한번에 반환하고 싶다면 아래와 같은 방법을 사용하면 된다.
+```python
+def function():
+    return 1, 2, 3
+
+a, b, c = function()
+print(a)        # 1
+print(b)        # 2
+print(c)        # 3
+```
+위 코드를 보면 `function()` 함수에서 여러개의 값이 반환된 것처럼 보이지만, 사실은 튜플 하나를 반환한 것이다. Python에서 튜플을 생성하는 것은 쉼표지 괄호가 아니다. 따라서 아래의 결과를 보면 튜플 언팩킹이 가능하다는 것을 알 수 있다.
+```bash
+>>> a = (1, 2)
+>>> a
+(1, 2)
+>>> b = 1, 2
+>>> b
+(1, 2)
+>>> x = function()
+>>> x
+(1, 2, 3)
+```
+
+<br>
+
+위 내용은 *Python Cookbook, 3rd edition, by David Beazley and Brian K. Jones (O'Reilly)* 를 참고하여 정리함.
