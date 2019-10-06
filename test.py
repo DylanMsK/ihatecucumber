@@ -1,9 +1,6 @@
-def test(a, b=None):
-    if not b:
-        print(f'b is {b}')
-    else:
-        print('yes')
-test(1)
-test(1, [])
-test(1, 0)
-test(1, '')
+import time
+funcs = [lambda x, n=n: x+n for n in range(5)]
+
+for f in funcs:
+    print(f(0))
+    time.sleep(1)
