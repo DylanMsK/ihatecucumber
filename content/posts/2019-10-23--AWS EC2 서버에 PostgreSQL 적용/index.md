@@ -14,14 +14,14 @@ $ sudo apt-get update && sudo apt-get -y upgrade
 기본 설정이 끝났으면 `Postgressql`을 설치한다.
 
 ```bash
-sudo apt-get install postgresql postgresql-contrib​
+$ sudo apt-get install postgresql postgresql-contrib​
 ```
 
 위 명령어를 통해 설치를 완료했다면 PostgreSQL은 초기화 되었지만, localhost와만 통신이 가능하다. 추가적인 옵션을 사용하기 위해서는 PostgreSQL configuration을 수정해 주어야 한다.
 먼저 아래의 명령어를 통해 default user의 패스워드를 지정해 준다.
 
-```bash
-sudo -u postgres psql
+```
+$ sudo -u postgres psql
 postgres=#\password​
 ```
 
@@ -32,7 +32,7 @@ postgres=#\password​
 
 ## DATABASE 생성
 #### Mac 
-```bash
+```
 CREATE DATABASE knock
 WITH
 TEMPLATE="template0"
@@ -49,7 +49,7 @@ LC_CTYPE="ko_KR.UTF-8";
 
 
 ## DATABASE 삭제
-```bash
+```
 DROP DATABASE template_postgis;
 ```
 
@@ -58,4 +58,12 @@ DROP DATABASE template_postgis;
 ```bash
 UPDATE pg_database SET datistemplate='false' WHERE datname='template_postgis';
 DROP DATABASE template_postgis;
+```
+
+## django 프로젝트에 postgis 적용
+```
+$ sudo apt install gdal-bin python-gdal python3-gdal
+$ sudo apt-get install postgis
+$ sudo -u postgres psql
+postgres=# CREATE EXTENSION postgis;
 ```

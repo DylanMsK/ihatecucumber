@@ -112,6 +112,8 @@ $ sudo service nginx restart
 ## 유지보수
 만약 django의 코드를 수정하여 EC2 서버에 수정 내용을 반영하고 싶다면 아래 명령어를 통해 최신화 한다.
 ```bash
+$ sudo supervisorctl reload
+$ sudo systemctl reload nginx
 $ sudo service nginx reload
 $ sudo service nginx restart
 ```
