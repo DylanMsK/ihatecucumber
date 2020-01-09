@@ -60,7 +60,7 @@ Python은 객체의 생성과 소멸을 **reference count** (refcount)를 통해
 
 ### Python의 메모리 관리 2 - Race Condition
 
-Python wiki의 GIL 정의에 따르면 CPython은 "thread-safe 하지 않다"라는 문구가 나옵니다. 하나의 process 내부의 thread들은 process가 공유하는 메모리에 접근할 수 있는데, 이로인해 메모리 유실이 발생할 수 있습니다. 아래의 코드를 통해 이 문제를 경험해볼 수 있습니다.
+Python wiki의 GIL 정의에 따르면 CPython은 "thread-safe 하지 않다"라는 문구가 나옵니다. 하나의 process 내부의 thread들은 process 내부에서 공유하는 메모리에 접근할 수 있는데, 이로인해 메모리 유실이 발생할 수 있습니다. 아래의 코드를 통해 이 문제를 경험해볼 수 있습니다.
 
 ```python
 import threading
